@@ -347,6 +347,8 @@ if touchScroll is false - update index
           }
         }
         if(locked===true) {
+          //Taken from https://github.com/lukehaas/Scrollify/pull/374#issuecomment-487730272
+          e.preventDefault();
           return false;
         }
         if(e.keyCode==38 || e.keyCode==33) {
